@@ -1,0 +1,94 @@
+.bg-container {
+  background-image: linear-gradient(to right, #f9d423, #e2a139);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6vh 4vh;
+}
+
+.coin-toss-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+
+  padding: 4vh ;
+
+  max-width: 700px;
+  max-height: 700px;
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: #a35200;
+}
+
+.heads-or-tails {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 800;
+  color: #334155;
+}
+
+.toss-image {
+  width: 60%;
+  margin-bottom: 4vh;
+}
+.toss-btn {
+  color: #a35200;
+  background-color: #f9d423;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 4vh;
+}
+
+.count-result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.count-result {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  color: #475569;
+}
+
+@media screen and (min-width:768px){
+  .coin-toss-card{
+    padding: 5vh 0px;
+    height: 60vh;
+    width: 50vw;
+  }
+  .heading{
+    font-size: 40px;
+  }
+  .heads-or-tails{
+    font-size: 28px;
+  }
+  .toss-image{
+    width: 250px;
+  }
+  .toss-btn{
+    font-size: 16px;
+  }
+  .count-result-container{
+    width: 50%;
+    flex-direction: row;
+  }
+}
